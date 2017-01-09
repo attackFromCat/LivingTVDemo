@@ -15,10 +15,18 @@
 		C97C00EC1E23A5920066D741 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97C00EB1E23A5920066D741 /* Profile.storyboard */; };
 		C97C00EE1E23A8E30066D741 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C97C00ED1E23A8E30066D741 /* Assets.xcassets */; };
 		C97C00F01E23AF5A0066D741 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C00EF1E23AF5A0066D741 /* HomeViewController.swift */; };
-		C97C00F31E23BAF70066D741 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C00F21E23BAF70066D741 /* UIBarButtonItem.swift */; };
+		C97C00F31E23BAF70066D741 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C00F21E23BAF70066D741 /* UIBarButtonItem+Extension.swift */; };
 		C97C00FA1E23C23F0066D741 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97C00F71E23C23F0066D741 /* Main.storyboard */; };
 		C97C00FB1E23C23F0066D741 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C00F81E23C23F0066D741 /* MainTabBarController.swift */; };
 		C97C00FD1E23C2560066D741 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C00FC1E23C2560066D741 /* PageTitleView.swift */; };
+		C97C00FF1E23C5290066D741 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C00FE1E23C5290066D741 /* Common.swift */; };
+		C97C01011E23DCFF0066D741 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C01001E23DCFF0066D741 /* PageContentView.swift */; };
+		C97C01031E23E2D70066D741 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C01021E23E2D70066D741 /* RecommendViewController.swift */; };
+		C97C01051E23E2E40066D741 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C01041E23E2E40066D741 /* GameViewController.swift */; };
+		C97C01071E23E2F70066D741 /* PhoneGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C01061E23E2F70066D741 /* PhoneGameViewController.swift */; };
+		C97C01091E23E30A0066D741 /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C01081E23E30A0066D741 /* AmuseViewController.swift */; };
+		C97C010B1E23E3150066D741 /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C010A1E23E3150066D741 /* FunnyViewController.swift */; };
+		C97C010D1E23F3560066D741 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C010C1E23F3560066D741 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +40,18 @@
 		C97C00EB1E23A5920066D741 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		C97C00ED1E23A8E30066D741 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C97C00EF1E23AF5A0066D741 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		C97C00F21E23BAF70066D741 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
+		C97C00F21E23BAF70066D741 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		C97C00F71E23C23F0066D741 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C97C00F81E23C23F0066D741 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C97C00FC1E23C2560066D741 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		C97C00FE1E23C5290066D741 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		C97C01001E23DCFF0066D741 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		C97C01021E23E2D70066D741 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		C97C01041E23E2E40066D741 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C97C01061E23E2F70066D741 /* PhoneGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneGameViewController.swift; sourceTree = "<group>"; };
+		C97C01081E23E30A0066D741 /* AmuseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
+		C97C010A1E23E3150066D741 /* FunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
+		C97C010C1E23F3560066D741 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +153,11 @@
 			children = (
 				C97C00E51E23A4280066D741 /* Home.storyboard */,
 				C97C00EF1E23AF5A0066D741 /* HomeViewController.swift */,
+				C97C01021E23E2D70066D741 /* RecommendViewController.swift */,
+				C97C01041E23E2E40066D741 /* GameViewController.swift */,
+				C97C01061E23E2F70066D741 /* PhoneGameViewController.swift */,
+				C97C01081E23E30A0066D741 /* AmuseViewController.swift */,
+				C97C010A1E23E3150066D741 /* FunnyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,7 +260,9 @@
 		C97C00F11E23BA810066D741 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C97C00F21E23BAF70066D741 /* UIBarButtonItem.swift */,
+				C97C00F21E23BAF70066D741 /* UIBarButtonItem+Extension.swift */,
+				C97C010C1E23F3560066D741 /* UIColor+Extension.swift */,
+				C97C00FE1E23C5290066D741 /* Common.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -257,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				C97C00FC1E23C2560066D741 /* PageTitleView.swift */,
+				C97C01001E23DCFF0066D741 /* PageContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -339,10 +363,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C97C00BE1E23957F0066D741 /* AppDelegate.swift in Sources */,
-				C97C00F31E23BAF70066D741 /* UIBarButtonItem.swift in Sources */,
+				C97C01031E23E2D70066D741 /* RecommendViewController.swift in Sources */,
+				C97C00F31E23BAF70066D741 /* UIBarButtonItem+Extension.swift in Sources */,
 				C97C00FD1E23C2560066D741 /* PageTitleView.swift in Sources */,
+				C97C01051E23E2E40066D741 /* GameViewController.swift in Sources */,
+				C97C01071E23E2F70066D741 /* PhoneGameViewController.swift in Sources */,
+				C97C01011E23DCFF0066D741 /* PageContentView.swift in Sources */,
 				C97C00FB1E23C23F0066D741 /* MainTabBarController.swift in Sources */,
+				C97C00FF1E23C5290066D741 /* Common.swift in Sources */,
+				C97C01091E23E30A0066D741 /* AmuseViewController.swift in Sources */,
+				C97C010D1E23F3560066D741 /* UIColor+Extension.swift in Sources */,
 				C97C00F01E23AF5A0066D741 /* HomeViewController.swift in Sources */,
+				C97C010B1E23E3150066D741 /* FunnyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
