@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
         let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width: kScreenW, height: kTitleViewH)
         let titles = ["推荐", "游戏", "手游", "娱乐", "趣玩"]
         let titleVeiw = PageTitleView(frame: titleFrame, titles: titles)
-        
+        titleVeiw.delegate = self
         return titleVeiw
     }()
     
@@ -34,7 +34,7 @@ class HomeViewController: UIViewController {
         childVcs.append(FunnyViewController())
         
         let contentView = PageContentView(frame: contentViewF, childVcs: childVcs, parentViewController: self)
-        
+        contentView.delegate = self
         return contentView
     }()
     
@@ -81,4 +81,19 @@ extension HomeViewController {
         navigationItem.rightBarButtonItems = [historyItem, qrcodeItem, searchItem]
     }
     
+}
+
+// MARK: - PageTitleViewDelegate
+extension HomeViewController : PageTitleViewDelegate {
+    func titleLabelClick(_ titleView: PageTitleView, selectedIndex: Int) {
+        pageContentView.setCurrentIndex(selectedIndex)
+    }
+}
+
+// MARK: - PageContentViewDelegate
+extension HomeViewController : PageContentViewDelegate {
+    
+    func scrollViewDrewing(_ pageContentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        pageTitleView.setTitleStatus(progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+    }
 }
