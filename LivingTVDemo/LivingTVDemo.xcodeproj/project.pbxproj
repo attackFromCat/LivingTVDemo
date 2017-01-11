@@ -27,6 +27,10 @@
 		C97C01091E23E30A0066D741 /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C01081E23E30A0066D741 /* AmuseViewController.swift */; };
 		C97C010B1E23E3150066D741 /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C010A1E23E3150066D741 /* FunnyViewController.swift */; };
 		C97C010D1E23F3560066D741 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C010C1E23F3560066D741 /* UIColor+Extension.swift */; };
+		C97C01101E2624840066D741 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C010E1E2624840066D741 /* CollectionHeaderView.swift */; };
+		C97C01111E2624840066D741 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C97C010F1E2624840066D741 /* CollectionHeaderView.xib */; };
+		C97C01141E26272B0066D741 /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C01121E26272B0066D741 /* CollectionNormalCell.swift */; };
+		C97C01151E26272B0066D741 /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C97C01131E26272B0066D741 /* CollectionNormalCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		C97C01081E23E30A0066D741 /* AmuseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
 		C97C010A1E23E3150066D741 /* FunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
 		C97C010C1E23F3560066D741 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		C97C010E1E2624840066D741 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		C97C010F1E2624840066D741 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
+		C97C01121E26272B0066D741 /* CollectionNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
+		C97C01131E26272B0066D741 /* CollectionNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +180,8 @@
 		C97C00D71E2397A70066D741 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C97C010E1E2624840066D741 /* CollectionHeaderView.swift */,
+				C97C010F1E2624840066D741 /* CollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,6 +291,8 @@
 			children = (
 				C97C00FC1E23C2560066D741 /* PageTitleView.swift */,
 				C97C01001E23DCFF0066D741 /* PageContentView.swift */,
+				C97C01121E26272B0066D741 /* CollectionNormalCell.swift */,
+				C97C01131E26272B0066D741 /* CollectionNormalCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -346,6 +358,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C97C00FA1E23C23F0066D741 /* Main.storyboard in Resources */,
+				C97C01111E2624840066D741 /* CollectionHeaderView.xib in Resources */,
+				C97C01151E26272B0066D741 /* CollectionNormalCell.xib in Resources */,
 				C97C00C81E23957F0066D741 /* LaunchScreen.storyboard in Resources */,
 				C97C00E61E23A4280066D741 /* Home.storyboard in Resources */,
 				C97C00E81E23A49E0066D741 /* Living.storyboard in Resources */,
@@ -366,6 +380,7 @@
 				C97C01031E23E2D70066D741 /* RecommendViewController.swift in Sources */,
 				C97C00F31E23BAF70066D741 /* UIBarButtonItem+Extension.swift in Sources */,
 				C97C00FD1E23C2560066D741 /* PageTitleView.swift in Sources */,
+				C97C01141E26272B0066D741 /* CollectionNormalCell.swift in Sources */,
 				C97C01051E23E2E40066D741 /* GameViewController.swift in Sources */,
 				C97C01071E23E2F70066D741 /* PhoneGameViewController.swift in Sources */,
 				C97C01011E23DCFF0066D741 /* PageContentView.swift in Sources */,
@@ -373,6 +388,7 @@
 				C97C00FF1E23C5290066D741 /* Common.swift in Sources */,
 				C97C01091E23E30A0066D741 /* AmuseViewController.swift in Sources */,
 				C97C010D1E23F3560066D741 /* UIColor+Extension.swift in Sources */,
+				C97C01101E2624840066D741 /* CollectionHeaderView.swift in Sources */,
 				C97C00F01E23AF5A0066D741 /* HomeViewController.swift in Sources */,
 				C97C010B1E23E3150066D741 /* FunnyViewController.swift in Sources */,
 			);
