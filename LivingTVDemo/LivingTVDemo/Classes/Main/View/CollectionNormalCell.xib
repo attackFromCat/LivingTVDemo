@@ -31,7 +31,7 @@
                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="2Pu-hh-W6G">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="2Pu-hh-W6G">
                         <rect key="frame" x="0.0" y="0.0" width="220" height="133"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -41,18 +41,21 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="练习写练习写" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBH-jB-OU5">
-                        <rect key="frame" x="0.0" y="112" width="68" height="14"/>
+                        <rect key="frame" x="0.0" y="113" width="140" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="RXd-AL-Qn4"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6L-Ly-18V">
-                        <rect key="frame" x="125" y="112" width="90" height="16"/>
+                        <rect key="frame" x="145" y="111" width="70" height="16"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="90" id="ADK-nb-EhS"/>
+                            <constraint firstAttribute="width" constant="70" id="SGZ-lK-w8a"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <state key="normal" title="12341关注" image="Image_online">
+                        <state key="normal" title="12341人" image="Image_online">
                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                     </button>
@@ -60,26 +63,27 @@
             </view>
             <constraints>
                 <constraint firstItem="2Pu-hh-W6G" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="08t-Oe-gkG"/>
-                <constraint firstAttribute="trailing" secondItem="i6L-Ly-18V" secondAttribute="trailing" constant="5" id="4jx-3c-nZc"/>
+                <constraint firstItem="i6L-Ly-18V" firstAttribute="bottom" secondItem="RBH-jB-OU5" secondAttribute="bottom" id="4dm-Y7-sPG"/>
                 <constraint firstItem="PeP-cw-1pI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="A7j-9o-dxQ"/>
                 <constraint firstAttribute="trailing" secondItem="qEW-rJ-PeZ" secondAttribute="trailing" constant="5" id="DjD-U8-5fu"/>
                 <constraint firstItem="qEW-rJ-PeZ" firstAttribute="top" secondItem="2Pu-hh-W6G" secondAttribute="bottom" constant="5" id="JF6-ep-hCy"/>
                 <constraint firstAttribute="bottom" secondItem="PeP-cw-1pI" secondAttribute="bottom" constant="10" id="OJN-2l-7Cm"/>
-                <constraint firstItem="RBH-jB-OU5" firstAttribute="leading" secondItem="PeP-cw-1pI" secondAttribute="leading" id="ada-IR-jVF"/>
+                <constraint firstAttribute="trailing" secondItem="i6L-Ly-18V" secondAttribute="trailing" constant="5" id="RNO-UP-oTE"/>
+                <constraint firstItem="RBH-jB-OU5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="W6T-CO-7Rg"/>
                 <constraint firstItem="PeP-cw-1pI" firstAttribute="centerY" secondItem="qEW-rJ-PeZ" secondAttribute="centerY" id="bPC-Zo-RyN"/>
-                <constraint firstItem="i6L-Ly-18V" firstAttribute="top" secondItem="2Pu-hh-W6G" secondAttribute="bottom" constant="-21" id="egN-ad-HoE"/>
                 <constraint firstAttribute="trailing" secondItem="2Pu-hh-W6G" secondAttribute="trailing" id="kfg-lD-Ryz"/>
+                <constraint firstItem="i6L-Ly-18V" firstAttribute="leading" secondItem="RBH-jB-OU5" secondAttribute="trailing" constant="5" id="ndY-LL-3yl"/>
                 <constraint firstItem="qEW-rJ-PeZ" firstAttribute="leading" secondItem="PeP-cw-1pI" secondAttribute="trailing" constant="5" id="pQU-8k-HJi"/>
-                <constraint firstItem="RBH-jB-OU5" firstAttribute="top" secondItem="2Pu-hh-W6G" secondAttribute="bottom" constant="-21" id="xWf-0X-vkU"/>
+                <constraint firstItem="RBH-jB-OU5" firstAttribute="top" secondItem="2Pu-hh-W6G" secondAttribute="bottom" constant="-20" id="sfw-m7-3Vo"/>
                 <constraint firstItem="2Pu-hh-W6G" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yIL-cY-FYb"/>
             </constraints>
             <size key="customSize" width="220" height="162"/>
-            <point key="canvasLocation" x="-164" y="-11"/>
+            <point key="canvasLocation" x="19" y="-6"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="Image_online" width="16" height="16"/>
+        <image name="Img_default" width="172" height="103"/>
         <image name="home_live_cate_normal" width="14" height="14"/>
-        <image name="live_cell_default_phone" width="103" height="103"/>
     </resources>
 </document>

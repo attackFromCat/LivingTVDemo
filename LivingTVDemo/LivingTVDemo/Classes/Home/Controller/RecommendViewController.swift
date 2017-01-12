@@ -10,13 +10,14 @@ import UIKit
 
 // MARK: - 基本常量
 fileprivate let kItemMargin : CGFloat = 10
-fileprivate let kItemWidth : CGFloat = (kScreenW - 3 * kItemMargin) * 0.5
-fileprivate let kItemHeight : CGFloat = (kItemWidth * 3) / 4
 fileprivate let kHeaderHeight : CGFloat = 50
-fileprivate let kPretyItemHeight : CGFloat = 300
+
+fileprivate let kNormalItemW : CGFloat = (kScreenW - 3 * kItemMargin) * 0.5
+fileprivate let kNormalItemH : CGFloat = (kNormalItemW * 3) / 4
+fileprivate let kPretyItemH = kNormalItemW * 4 / 3
 
 fileprivate let KNormalCellID : String = "KNormalCellID"
-fileprivate let KPretyCellID : String = "KPretyCellID"
+fileprivate let KPretyCellID  : String = "KPretyCellID"
 fileprivate let KHeaderViewID : String = "KHeaderViewID"
 
 class RecommendViewController: UIViewController {
@@ -28,7 +29,7 @@ class RecommendViewController: UIViewController {
     fileprivate lazy var collectionView : UICollectionView = { [unowned self] in
         // 设置流水布局
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: kItemWidth, height: kItemHeight)
+        layout.itemSize = CGSize(width: kNormalItemW, height: kNormalItemH)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = kItemMargin
         layout.sectionInset = UIEdgeInsetsMake(0, kItemMargin, 0, kItemMargin)
@@ -43,8 +44,8 @@ class RecommendViewController: UIViewController {
         collectionView.delegate = self
         
         collectionView.register(UINib(nibName: "CollectionNormalCell", bundle: nil), forCellWithReuseIdentifier: KNormalCellID)
-        collectionView.register(UINib(nibName: "CollectionPretyCell", bundle: nil), forCellWithReuseIdentifier: KPretyCellID)
         
+        collectionView.register(UINib(nibName: "CollectionPretyCell", bundle: nil), forCellWithReuseIdentifier: KPretyCellID)
         collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: KHeaderViewID)
         
         return collectionView
@@ -55,13 +56,11 @@ class RecommendViewController: UIViewController {
         super.viewDidLoad()
         
         setupUI()
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
+        // Dispose of any resources that can be recreated.
     }
 
 
@@ -93,8 +92,10 @@ extension RecommendViewController : UICollectionViewDataSource {
         if indexPath.section == 1 {
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: KPretyCellID, for: indexPath)
         }else{
+            
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: KNormalCellID, for: indexPath)
         }
+        
         
         return cell
         
@@ -103,23 +104,23 @@ extension RecommendViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: KHeaderViewID, for: indexPath)
-        
-        
-        
+    
         return headerView
     }
 }
 
-extension RecommendViewController : UICollectionViewDelegateFlowLayout {
+// MARK: - UICollectionViewDelegateFlowLayout
+extension RecommendViewController : UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         
         if indexPath.section == 1 {
-
-            return CGSize(width: kItemWidth, height: kPretyItemHeight)
+            return CGSize(width: kNormalItemW, height: kPretyItemH)
         }else{
-            return CGSize(width: kItemWidth, height: kItemHeight)
+            return CGSize(width: kNormalItemW, height: kNormalItemH)
         }
+        
     }
+    
     
 }
