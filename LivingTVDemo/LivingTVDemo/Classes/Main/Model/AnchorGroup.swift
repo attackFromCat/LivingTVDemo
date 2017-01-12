@@ -28,4 +28,15 @@ class AnchorGroup: NSObject {
     /// 定义主播的模型对象数组
     lazy var anchors : [AnchorModel] = [AnchorModel]()
     
+    // MARK:- 自定义构造函数
+    override init() {
+        
+    }
+    
+    init(dict : [String : Any]) {
+        super.init()
+        
+        setValuesForKeys(dict)
+    }
+    override func setValue(_ value: Any?, forUndefinedKey key: String) {}
 }

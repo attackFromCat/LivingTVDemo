@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CollectionBaseCell: UICollectionViewCell {
     
@@ -35,7 +36,7 @@ class CollectionBaseCell: UICollectionViewCell {
             
             // 3.设置封面图片
             guard let iconURL = URL(string: anchor.vertical_src) else { return }
-            roomImageView.kf.setImage(with: iconURL)
+            roomImageView.kf.setImage(with: iconURL, placeholder: nil)
         }
     }
 

@@ -14,10 +14,10 @@
 
 import UIKit
 
-class RecommendViewModel: NSObject {
+class RecommendViewModel: BaseViewModel {
     
     // MARK: - 懒加载属性
-    lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]()
+//    lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]()
     fileprivate lazy var bigDataGroup : AnchorGroup = AnchorGroup()
     fileprivate lazy var prettyGroup : AnchorGroup = AnchorGroup()
 }
@@ -26,14 +26,14 @@ class RecommendViewModel: NSObject {
 extension RecommendViewModel {
     // 请求推荐数据
     func requestData(_ finishCallback : @escaping () -> ()) {
-        let parameters = ["limit" : "4", "offset" : "0", "time" : Date.getCurrentTime()]
+        let parameters = ["limit" : "4", "offset" : "0", "time" : Date.getCurrentTimeInterval()]
         
         // 2.创建Group
         let dGroup = DispatchGroup()
         
         // 3.请求第一部分推荐数据
         dGroup.enter()
-        NetworkTools.requestData(.get, URLString: "http://capi.douyucdn.cn/api/v1/getbigDataRoom", parameters: ["time" : Date.getCurrentTime()]) { (result) in
+        NetworkTools.requestData(.get, URLString: "http://capi.douyucdn.cn/api/v1/getbigDataRoom", parameters: ["time" : Date.getCurrentTimeInterval()]) { (result) in
             
             // 1.将result转成字典类型
             guard let resultDict = result as? [String : NSObject] else { return }

@@ -14,7 +14,7 @@ class CollectionNormalCell: CollectionBaseCell {
     @IBOutlet weak var roomNameLabel: UILabel!
     
     
-    var anchor : AnchorModel? {
+    override var anchor : AnchorModel? {
         didSet{ // 属性监听器
             super.anchor = anchor
             
