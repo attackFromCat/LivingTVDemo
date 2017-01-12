@@ -49,7 +49,7 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6L-Ly-18V">
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6L-Ly-18V">
                         <rect key="frame" x="145" y="111" width="70" height="16"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="70" id="SGZ-lK-w8a"/>
@@ -78,6 +78,12 @@
                 <constraint firstItem="2Pu-hh-W6G" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yIL-cY-FYb"/>
             </constraints>
             <size key="customSize" width="220" height="162"/>
+            <connections>
+                <outlet property="nickNameLabel" destination="RBH-jB-OU5" id="vTr-ai-n2q"/>
+                <outlet property="onlineBtn" destination="i6L-Ly-18V" id="26I-kQ-Ldy"/>
+                <outlet property="roomImageView" destination="2Pu-hh-W6G" id="Kpu-KD-jdF"/>
+                <outlet property="roomNameLabel" destination="qEW-rJ-PeZ" id="CrG-tk-irw"/>
+            </connections>
             <point key="canvasLocation" x="19" y="-6"/>
         </collectionViewCell>
     </objects>

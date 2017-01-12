@@ -80,6 +80,12 @@
                 <constraint firstItem="Msa-TW-T7j" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pWX-PT-iGd"/>
             </constraints>
             <size key="customSize" width="243" height="221"/>
+            <connections>
+                <outlet property="locationBtn" destination="Msa-TW-T7j" id="kcw-IB-3sO"/>
+                <outlet property="nickNameLabel" destination="aXh-Gv-3sB" id="GUM-18-mzC"/>
+                <outlet property="onlineBtn" destination="FeG-oP-mQg" id="exX-TX-qzL"/>
+                <outlet property="roomImageView" destination="vLE-AQ-c1n" id="2Xb-KX-56f"/>
+            </connections>
             <point key="canvasLocation" x="5.5" y="-25.5"/>
         </collectionViewCell>
     </objects>

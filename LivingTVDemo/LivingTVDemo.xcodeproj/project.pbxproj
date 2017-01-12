@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C901B8FB1E2773B5006ED761 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C901B8FA1E2773B5006ED761 /* NetworkTools.swift */; };
+		C901B8FE1E27743A006ED761 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C901B8FD1E27743A006ED761 /* AnchorModel.swift */; };
+		C901B9001E27745A006ED761 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C901B8FF1E27745A006ED761 /* AnchorGroup.swift */; };
+		C901B9041E2775B3006ED761 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C901B9031E2775B3006ED761 /* RecommendViewModel.swift */; };
+		C901B9061E277A5F006ED761 /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C901B9051E277A5F006ED761 /* CollectionBaseCell.swift */; };
 		C9077B5B1E27647E00BAC67C /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9077B5A1E27647E00BAC67C /* NSDate+Extension.swift */; };
 		C9077B5E1E27655900BAC67C /* CollectionPretyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9077B5C1E27655900BAC67C /* CollectionPretyCell.swift */; };
 		C9077B5F1E27655900BAC67C /* CollectionPretyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9077B5D1E27655900BAC67C /* CollectionPretyCell.xib */; };
@@ -37,6 +42,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C901B8FA1E2773B5006ED761 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		C901B8FD1E27743A006ED761 /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		C901B8FF1E27745A006ED761 /* AnchorGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
+		C901B9031E2775B3006ED761 /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		C901B9051E277A5F006ED761 /* CollectionBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
 		C9077B5A1E27647E00BAC67C /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		C9077B5C1E27655900BAC67C /* CollectionPretyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPretyCell.swift; sourceTree = "<group>"; };
 		C9077B5D1E27655900BAC67C /* CollectionPretyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPretyCell.xib; sourceTree = "<group>"; };
@@ -54,7 +64,7 @@
 		C97C00F71E23C23F0066D741 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C97C00F81E23C23F0066D741 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C97C00FC1E23C2560066D741 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
-		C97C00FE1E23C5290066D741 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Tools/Extension/Common.swift; sourceTree = "<group>"; };
+		C97C00FE1E23C5290066D741 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Extension/Common.swift; sourceTree = "<group>"; };
 		C97C01001E23DCFF0066D741 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		C97C01021E23E2D70066D741 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		C97C01041E23E2E40066D741 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +89,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C901B8FC1E277412006ED761 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C901B8FD1E27743A006ED761 /* AnchorModel.swift */,
+				C901B8FF1E27745A006ED761 /* AnchorGroup.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C901B9011E27758B006ED761 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = Controller/Model;
+			sourceTree = "<group>";
+		};
+		C901B9021E27758B006ED761 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C901B9031E2775B3006ED761 /* RecommendViewModel.swift */,
+			);
+			name = ViewModel;
+			path = Controller/ViewModel;
+			sourceTree = "<group>";
+		};
 		C97C00B11E23957E0066D741 = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +152,6 @@
 				C97C00DE1E2397A70066D741 /* Profile */,
 				C97C00DC1E2397A70066D741 /* Main */,
 				C97C00E21E2397A70066D741 /* Tools */,
-				C97C00FE1E23C5290066D741 /* Common.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -157,7 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				C97C00D51E2397A70066D741 /* Controller */,
-				C97C00D61E2397A70066D741 /* Model */,
+				C901B9021E27758B006ED761 /* ViewModel */,
+				C901B9011E27758B006ED761 /* Model */,
 				C97C00D71E2397A70066D741 /* View */,
 			);
 			path = Home;
@@ -175,13 +211,6 @@
 				C97C010A1E23E3150066D741 /* FunnyViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		C97C00D61E2397A70066D741 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		C97C00D71E2397A70066D741 /* View */ = {
@@ -228,6 +257,7 @@
 		C97C00DC1E2397A70066D741 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C901B8FC1E277412006ED761 /* Model */,
 				C97C00F61E23C23F0066D741 /* Controller */,
 				C97C00F91E23C23F0066D741 /* View */,
 			);
@@ -270,6 +300,8 @@
 			isa = PBXGroup;
 			children = (
 				C97C00F11E23BA810066D741 /* Extension */,
+				C97C00FE1E23C5290066D741 /* Common.swift */,
+				C901B8FA1E2773B5006ED761 /* NetworkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -302,6 +334,7 @@
 				C97C01131E26272B0066D741 /* CollectionNormalCell.xib */,
 				C9077B5C1E27655900BAC67C /* CollectionPretyCell.swift */,
 				C9077B5D1E27655900BAC67C /* CollectionPretyCell.xib */,
+				C901B9051E277A5F006ED761 /* CollectionBaseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -388,6 +421,8 @@
 			files = (
 				C97C00BE1E23957F0066D741 /* AppDelegate.swift in Sources */,
 				C97C01031E23E2D70066D741 /* RecommendViewController.swift in Sources */,
+				C901B9061E277A5F006ED761 /* CollectionBaseCell.swift in Sources */,
+				C901B8FE1E27743A006ED761 /* AnchorModel.swift in Sources */,
 				C97C00F31E23BAF70066D741 /* UIBarButtonItem+Extension.swift in Sources */,
 				C97C00FD1E23C2560066D741 /* PageTitleView.swift in Sources */,
 				C97C01141E26272B0066D741 /* CollectionNormalCell.swift in Sources */,
@@ -397,9 +432,12 @@
 				C9077B5B1E27647E00BAC67C /* NSDate+Extension.swift in Sources */,
 				C97C00FB1E23C23F0066D741 /* MainTabBarController.swift in Sources */,
 				C97C00FF1E23C5290066D741 /* Common.swift in Sources */,
+				C901B9001E27745A006ED761 /* AnchorGroup.swift in Sources */,
+				C901B9041E2775B3006ED761 /* RecommendViewModel.swift in Sources */,
 				C97C01091E23E30A0066D741 /* AmuseViewController.swift in Sources */,
 				C97C010D1E23F3560066D741 /* UIColor+Extension.swift in Sources */,
 				C97C01101E2624840066D741 /* CollectionHeaderView.swift in Sources */,
+				C901B8FB1E2773B5006ED761 /* NetworkTools.swift in Sources */,
 				C97C00F01E23AF5A0066D741 /* HomeViewController.swift in Sources */,
 				C97C010B1E23E3150066D741 /* FunnyViewController.swift in Sources */,
 				C9077B5E1E27655900BAC67C /* CollectionPretyCell.swift in Sources */,
