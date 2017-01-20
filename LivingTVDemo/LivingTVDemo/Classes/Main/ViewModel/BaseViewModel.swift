@@ -12,7 +12,6 @@ class BaseViewModel {
     lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]()
 }
 
-
 extension BaseViewModel {
     func loadAnchorData(isGroupData : Bool, URLString : String, parameters : [String : Any]? = nil, finishedCallback : @escaping () -> ()) {
         NetworkTools.requestData(.get, URLString: URLString, parameters: parameters) { (result) in
