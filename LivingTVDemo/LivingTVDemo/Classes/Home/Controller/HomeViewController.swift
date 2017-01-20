@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     fileprivate lazy var pageTitleView : PageTitleView = {[weak self] in
         
         let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width: kScreenW, height: kTitleViewH)
-        let titles = ["推荐", "游戏", "手游", "娱乐", "趣玩"]
+        let titles = ["推荐", "游戏", "娱乐", "趣玩"]
         let titleVeiw = PageTitleView(frame: titleFrame, titles: titles)
         titleVeiw.delegate = self
         return titleVeiw
@@ -29,7 +29,6 @@ class HomeViewController: UIViewController {
         var childVcs = [UIViewController]()
         childVcs.append(RecommendViewController())
         childVcs.append(GameViewController())
-        childVcs.append(PhoneGameViewController())
         childVcs.append(AmuseViewController())
         childVcs.append(FunnyViewController())
         

@@ -8,28 +8,49 @@
 
 import UIKit
 
-class AmuseViewController: UIViewController {
+fileprivate let kMenuViewH : CGFloat = 200
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = UIColor.green
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+class AmuseViewController: BaseAnchorViewController {
     
+    // MARK: 懒加载属性
+    fileprivate lazy var amuseVM : AmuseViewModel = AmuseViewModel()
+    fileprivate lazy var menuView : AmuseMenuView = {
+        let menuView = AmuseMenuView.amuseMenuView()
+        menuView.frame = CGRect(x: 0, y: -kMenuViewH, width: kScreenW, height: kMenuViewH)
+        return menuView
+    }()
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+// MARK:- 设置UI界面
+extension AmuseViewController {
+    override func setupUI() {
+        super.setupUI()
+        
+        // 将菜单的View添加到collectionView中
+        collectionView.addSubview(menuView)
+        collectionView.contentInset = UIEdgeInsets(top: kMenuViewH, left: 0, bottom: 0, right: 0)
     }
-    */
+}
 
+// MARK:- 请求数据
+extension AmuseViewController {
+    override func loadData() {
+        
+        // 1.给父类中ViewModel进行赋值
+        baseVM = amuseVM
+        
+        // 2.请求数据
+        amuseVM.loadAmuseData {
+            // 2.1.刷新表格
+            self.collectionView.reloadData()
+            
+            // 2.2.调整数据
+            var tempGroups = self.amuseVM.anchorGroups
+            tempGroups.removeFirst()
+            self.menuView.groups = tempGroups
+            
+            // 3.数据请求完成
+            self.loadDataFinished()
+        }
+    }
 }

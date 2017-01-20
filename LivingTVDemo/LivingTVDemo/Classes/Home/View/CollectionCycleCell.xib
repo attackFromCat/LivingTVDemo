@@ -30,7 +30,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="0.43558619966442952" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="HHr-Z7-8aG"/>
                             <constraint firstItem="DRv-Qt-iSJ" firstAttribute="leading" secondItem="IRT-8a-o6s" secondAttribute="leading" constant="15" id="IJr-Av-ahc"/>
